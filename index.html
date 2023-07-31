@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/sky.css" />
+    <link rel="stylesheet" href="dist/presentation.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <p class="title">Some new CSS features for 2023</p>
+        </section>
+        <section>
+          <ul class="ul">
+            The CSS features:
+            <li class="css-feature fragment">mathematical operators</li>
+            <li class="css-feature fragment">nth-of</li>
+            <li class="css-feature fragment">container queries</li>
+          </ul>
+        </section>
+        <section>
+          <ol class="ul">
+            The perspectives:
+            <li class="css-feature fragment">syntax</li>
+            <li class="css-feature fragment">support</li>
+            <li class="css-feature fragment">usage</li>
+          </ol>
+        </section>
+
+        <section>
+          <p class="property-title">Mathematical operators</p>
+        </section>
+        <section>
+					<p class="sub-title">Mathematical operators</p>
+          <section class="operators">
+						<div class="example fragment">
+							<span class="fragment"> > </span>
+							<span class="fragment"> < </span>
+							<span class="fragment"> >= </span>
+							<span class="fragment"> <= </span>
+						</div>
+						<div class="example-syntax fragment"><span class="media">@media</span> (<span>min-width</span>: 950px) and (<span>max-width</span>: 1850px)</div>
+						<br>
+						<div class="example-syntax fragment"><span class="media">@media</span> (950px<span> <= </span>width <span><= </span> 1850px)</div>
+					</section>
+          <section>
+						<div class="image-operators">
+							<img src="./assets/operators.png" alt="operators-support">
+						</div>
+					</section>
+        </section>
+
+				<section>
+          <p class="property-title">nth-of</p>
+        </section>
+        <section>
+					<p class="sub-title">nth-of</p>
+          <section class="operators">
+						<div class="example fragment">
+							<span class="fragment"> :nth-child </span>
+							<span class="fragment"> :nth-last-child() </span>
+						</div>
+						<div class="example-syntax fragment">:nth-child(1 <span>of</span> .foo)</div>
+						<div class="example-syntax fragment">:nth-last-child(1 <span>of</span> .foo)</div>
+					</section>
+          <section>
+						<div class="image-operators">
+							<img src="./assets/nth-of.png" alt="nth-of-support">
+						</div>
+					</section>
+        </section>
+
+				<section>
+          <p class="property-title">container queries</p>
+        </section>
+        <section>
+					<p class="sub-title">container queries</p>
+          <section class="operators">
+						<div class="example block fragment">
+							<div class="example-syntax fragment"><span class="media">@media</span> (<span>min-width</span>: 950px) and (<span>max-width</span>: 1850px)</div>
+							<div class="example-syntax fragment"><span class="media">@container</span> (<span>min-width</span>: 500px) and (<span>max-width</span>: 750px)</div>
+							<div class="example-syntax fragment"><span class="media">@container</span> (500px<span> <= </span>width <span><= </span> 750px)</div>
+						</div>
+
+					</section>
+          <section>
+						<div class="image-operators">
+							<img src="./assets/container.png" alt="container-support">
+						</div>
+					</section>
+        </section>
+
+
+
+
+
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>

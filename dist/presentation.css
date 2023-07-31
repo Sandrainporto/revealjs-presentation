@@ -1,0 +1,49 @@
+
+.title{
+  font-size:3rem;
+  font-weight: 600;
+  color: #0000CD;
+
+}
+.ul{
+  color: #0000CD;
+
+}
+.css-feature{
+  margin-top: 20px;
+  color: #161616;
+  font-size: 2rem;
+}
+.property-title{
+  font-weight: 600;
+  color: #0000CD;
+}
+.sub-title{
+  color: #0000CD;
+}
+.sub-title>span{
+  color: #161616;
+}
+.example{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.example-syntax{
+  display: inline-block;
+  padding: 15px;
+  background: #383535;
+  color: #b1a9a9;
+  font-size: 22px;
+}
+
+.example-syntax>span:not(.media){
+  color: aquamarine;
+}
+.media{
+  color: rgb(255, 0, 64);
+}
+.block{
+  display: block;
+}
