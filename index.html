@@ -44,69 +44,104 @@
           <p class="property-title">Mathematical operators</p>
         </section>
         <section>
-					<p class="sub-title">Mathematical operators</p>
+          <p class="sub-title">Mathematical operators</p>
           <section class="operators">
-						<div class="example fragment">
-							<span class="fragment"> > </span>
-							<span class="fragment"> < </span>
-							<span class="fragment"> >= </span>
-							<span class="fragment"> <= </span>
-						</div>
-						<div class="example-syntax fragment"><span class="media">@media</span> (<span>min-width</span>: 950px) and (<span>max-width</span>: 1850px)</div>
-						<br>
-						<div class="example-syntax fragment"><span class="media">@media</span> (950px<span> <= </span>width <span><= </span> 1850px)</div>
-					</section>
+            <div class="example fragment">
+              <span class="fragment"> > </span>
+              <span class="fragment"> < </span>
+              <span class="fragment"> >= </span>
+              <span class="fragment"> <= </span>
+            </div>
+            <div class="example-syntax fragment">
+              <span class="media">@media</span> (<span>min-width</span>: 950px)
+              and (<span>max-width</span>: 1850px)
+            </div>
+            <br />
+            <div class="example-syntax fragment">
+              <span class="media">@media</span> (950px<span> <= </span>width
+              <span><= </span> 1850px)
+            </div>
+          </section>
           <section>
-						<div class="image-operators">
-							<img src="./assets/operators.png" alt="operators-support">
-						</div>
-					</section>
+            <div class="image-operators">
+              <img src="./assets/operators.png" alt="operators-support" />
+            </div>
+          </section>
         </section>
 
-				<section>
+        <section>
           <p class="property-title">nth-of</p>
         </section>
         <section>
-					<p class="sub-title">nth-of</p>
+          <p class="sub-title">nth-of</p>
           <section class="operators">
-						<div class="example fragment">
-							<span class="fragment"> :nth-child </span>
-							<span class="fragment"> :nth-last-child() </span>
-						</div>
-						<div class="example-syntax fragment">:nth-child(1 <span>of</span> .foo)</div>
-						<div class="example-syntax fragment">:nth-last-child(1 <span>of</span> .foo)</div>
-					</section>
+            <div class="example fragment">
+              <span class="fragment"> :nth-child </span>
+              <span class="fragment"> :nth-last-child() </span>
+            </div>
+            <div class="example-syntax fragment">
+              :nth-child(1 <span>of</span> .foo)
+            </div>
+            <div class="example-syntax fragment">
+              :nth-last-child(1 <span>of</span> .foo)
+            </div>
+          </section>
           <section>
-						<div class="image-operators">
-							<img src="./assets/nth-of.png" alt="nth-of-support">
-						</div>
-					</section>
+            <div class="image-operators">
+              <img src="./assets/nth-of.png" alt="nth-of-support" />
+            </div>
+          </section>
         </section>
 
-				<section>
+        <section>
           <p class="property-title">container queries</p>
         </section>
         <section>
-					<p class="sub-title">container queries</p>
+          <p class="sub-title">container queries</p>
           <section class="operators">
-						<div class="example block fragment">
-							<div class="example-syntax fragment"><span class="media">@media</span> (<span>min-width</span>: 950px) and (<span>max-width</span>: 1850px)</div>
-							<div class="example-syntax fragment"><span class="media">@container</span> (<span>min-width</span>: 500px) and (<span>max-width</span>: 750px)</div>
-							<div class="example-syntax fragment"><span class="media">@container</span> (500px<span> <= </span>width <span><= </span> 750px)</div>
-						</div>
-
-					</section>
+            <div class="example block fragment">
+              <div class="example-syntax fragment">
+                <span class="media">@media</span> (<span>min-width</span>:
+                950px) and (<span>max-width</span>: 1850px)
+              </div>
+              <div class="example-syntax fragment">
+                <span class="media">@container</span> (<span>min-width</span>:
+                500px) and (<span>max-width</span>: 750px)
+              </div>
+              <div class="example-syntax fragment">
+                <span class="media">@container</span> (500px<span> <= </span
+                >width <span><= </span> 750px)
+              </div>
+            </div>
+          </section>
           <section>
-						<div class="image-operators">
-							<img src="./assets/container.png" alt="container-support">
-						</div>
-					</section>
+            <div class="image-operators">
+              <img src="./assets/container.png" alt="container-support" />
+            </div>
+          </section>
         </section>
 
-
-
-
-
+        <section>
+          <p class="property-title">Useful links</p>
+          <ul class="ul">
+            <li class="css-feature fragment">
+              <a href="https://www.w3.org/TR/mediaqueries-4/#mq-range-context"
+                >mathematical operators</a
+              >
+            </li>
+            <li class="css-feature fragment">
+              <a href="https://drafts.csswg.org/selectors/#the-nth-child-pseudo"
+                >nth-of</a
+              >
+            </li>
+            <li class="css-feature fragment">
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_container_queries"
+                >CSS container queries</a
+              >
+            </li>
+          </ul>
+        </section>
       </div>
     </div>
 
@@ -120,6 +155,7 @@
       // - https://revealjs.com/config/
       Reveal.initialize({
         hash: true,
+        slideNumber: 'c/t',
 
         // Learn about plugins: https://revealjs.com/plugins/
         plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
